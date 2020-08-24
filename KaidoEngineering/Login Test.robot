@@ -39,3 +39,4 @@ LoginKW
     Input Text        id=txtEmail      ${Login2}[0]
     Input Password    id=txtPass       ${Login2}[1]
     Click Button      id=btnloginuser   
+    Click Element     link= Logout 
