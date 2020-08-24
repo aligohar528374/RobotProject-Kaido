@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200824 09:57:06.718" rpa="false">
+<suite id="s1" name="KaidoEngineering" source="D:\Automation\RobotFramework\workspace\KaidoEngineering">
+<suite id="s1-s1" name="Login Test" source="D:\Automation\RobotFramework\workspace\KaidoEngineering\Login Test.robot">
+<test id="s1-s1-t1" name=" Login TestCase Customer">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200824 09:57:07.102" level="INFO">Opening browser 'Chrome' to base url 'http://kaidaoengineering.systemsjunction.com/sign-in'.</msg>
+<status status="PASS" starttime="20200824 09:57:07.102" endtime="20200824 09:57:17.333"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200824 09:57:17.333" endtime="20200824 09:57:17.335"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtEmail</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20200824 09:57:17.336" level="INFO">Typing text 'Qa@gmail.com' into text field 'id=txtEmail'.</msg>
+<status status="PASS" starttime="20200824 09:57:17.336" endtime="20200824 09:57:17.490"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPass</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200824 09:57:17.492" level="INFO">Typing password into text field 'id=txtPass'.</msg>
+<msg timestamp="20200824 09:57:17.575" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200824 09:57:17.647" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200824 09:57:17.491" endtime="20200824 09:57:17.647"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnloginuser</arg>
+</arguments>
+<msg timestamp="20200824 09:57:17.648" level="INFO">Clicking button 'id=btnloginuser'.</msg>
+<status status="PASS" starttime="20200824 09:57:17.647" endtime="20200824 09:57:30.962"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=RFQ</arg>
+</arguments>
+<msg timestamp="20200824 09:57:30.963" level="INFO">Clicking element 'link=RFQ'.</msg>
+<status status="PASS" starttime="20200824 09:57:30.962" endtime="20200824 09:57:36.766"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link= Add New RFQ</arg>
+</arguments>
+<msg timestamp="20200824 09:57:36.768" level="INFO">Clicking element 'link= Add New RFQ'.</msg>
+<status status="PASS" starttime="20200824 09:57:36.767" endtime="20200824 09:57:38.551"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link= Logout</arg>
+</arguments>
+<msg timestamp="20200824 09:57:38.553" level="INFO">Clicking element 'link= Logout'.</msg>
+<status status="PASS" starttime="20200824 09:57:38.552" endtime="20200824 09:57:44.415"></status>
+</kw>
+<doc>This is a Login Test</doc>
+<tags>
+<tag>SmokeTest</tag>
+</tags>
+<status status="PASS" starttime="20200824 09:57:07.101" endtime="20200824 09:57:44.415" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Login Test Supplier">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Sign In</arg>
+</arguments>
+<msg timestamp="20200824 09:57:44.420" level="INFO">Clicking element 'link=Sign In'.</msg>
+<status status="PASS" starttime="20200824 09:57:44.419" endtime="20200824 09:57:45.284"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtEmail</arg>
+<arg>${logindata}[username]</arg>
+</arguments>
+<msg timestamp="20200824 09:57:45.286" level="INFO">Typing text 'QaT@gmail.com' into text field 'id=txtEmail'.</msg>
+<status status="PASS" starttime="20200824 09:57:45.285" endtime="20200824 09:57:45.402"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPass</arg>
+<arg>${logindata}[pass]</arg>
+</arguments>
+<msg timestamp="20200824 09:57:45.403" level="INFO">Typing password into text field 'id=txtPass'.</msg>
+<msg timestamp="20200824 09:57:45.447" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200824 09:57:45.503" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200824 09:57:45.403" endtime="20200824 09:57:45.504"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnloginuser</arg>
+</arguments>
+<msg timestamp="20200824 09:57:45.505" level="INFO">Clicking button 'id=btnloginuser'.</msg>
+<status status="PASS" starttime="20200824 09:57:45.504" endtime="20200824 09:57:47.402"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link= Logout</arg>
+</arguments>
+<msg timestamp="20200824 09:57:47.406" level="INFO">Clicking element 'link= Logout'.</msg>
+<status status="PASS" starttime="20200824 09:57:47.403" endtime="20200824 09:57:48.982"></status>
+</kw>
+<tags>
+<tag>SmokeTest</tag>
+</tags>
+<status status="PASS" starttime="20200824 09:57:44.417" endtime="20200824 09:57:48.983" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Login Test Customer">
+<kw name="LoginKW">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Sign In</arg>
+</arguments>
+<msg timestamp="20200824 09:57:48.987" level="INFO">Clicking element 'link=Sign In'.</msg>
+<status status="PASS" starttime="20200824 09:57:48.986" endtime="20200824 09:57:49.785"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtEmail</arg>
+<arg>${Login2}[0]</arg>
+</arguments>
+<msg timestamp="20200824 09:57:49.787" level="INFO">Typing text 'Qa@gmail.com' into text field 'id=txtEmail'.</msg>
+<status status="PASS" starttime="20200824 09:57:49.785" endtime="20200824 09:57:49.895"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPass</arg>
+<arg>${Login2}[1]</arg>
+</arguments>
+<msg timestamp="20200824 09:57:49.896" level="INFO">Typing password into text field 'id=txtPass'.</msg>
+<msg timestamp="20200824 09:57:49.934" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200824 09:57:49.994" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200824 09:57:49.896" endtime="20200824 09:57:49.995"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnloginuser</arg>
+</arguments>
+<msg timestamp="20200824 09:57:49.995" level="INFO">Clicking button 'id=btnloginuser'.</msg>
+<status status="PASS" starttime="20200824 09:57:49.995" endtime="20200824 09:57:51.581"></status>
+</kw>
+<status status="PASS" starttime="20200824 09:57:48.985" endtime="20200824 09:57:51.582"></status>
+</kw>
+<tags>
+<tag>Retest</tag>
+</tags>
+<status status="PASS" starttime="20200824 09:57:48.984" endtime="20200824 09:57:51.582" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200824 09:57:06.791" endtime="20200824 09:57:51.584"></status>
+</suite>
+<status status="PASS" starttime="20200824 09:57:06.763" endtime="20200824 09:57:51.591"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Retest</stat>
+<stat pass="2" fail="0">SmokeTest</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="KaidoEngineering">KaidoEngineering</stat>
+<stat pass="3" fail="0" id="s1-s1" name="Login Test">KaidoEngineering.Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
